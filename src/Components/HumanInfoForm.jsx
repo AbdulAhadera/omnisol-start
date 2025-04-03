@@ -5,9 +5,12 @@ import { SlCallOut } from "react-icons/sl";
 import { IoMdContacts } from "react-icons/io";
 import { CiChat1, CiCalendar } from "react-icons/ci";
 import { IoPersonAddSharp } from "react-icons/io5";
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function HumanInfoForm() {
+
+  const navigate = useNavigate();
+
   const [selectedOption, setSelectedOption] = useState('');
   const [inputValue, setInputValue] = useState('');
   const [selectedFeatures, setSelectedFeatures] = useState([]);
@@ -137,7 +140,7 @@ function HumanInfoForm() {
       <div className="flex justify-center mt-6">
         <button
           className="bg-blue-600 text-white py-2 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700"
-          onClick={() => Navigate('/v1/agent/selectedagent')}
+          onClick={() => navigate('/v1/agent/selectedagent')}
         >
           Continue
         </button>

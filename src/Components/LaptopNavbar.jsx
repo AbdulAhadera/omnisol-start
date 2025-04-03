@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function LaptopNavbar() {
     return (
-        <nav className='shadow-lg flex justify-between bg-gradient-to-t  from-gray-900 via-navy-800 to-gray-900 border-b border-blue-800/30 py-2 w-full px-2 sm:px-4 md:px-40 lg:px-60'>
+        <nav className='shadow-lg flex justify-between bg-gradient-to-t from-gray-900 via-navy-800 to-gray-900 border-b border-blue-800/30 py-2 w-full px-2 sm:px-4 md:px-40 lg:px-60'>
 
 
             <div className=''>

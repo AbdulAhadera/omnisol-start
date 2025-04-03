@@ -3,6 +3,9 @@ import HeroSection from "../Sections/HeroSection";
 import FooterSection from "../Sections/FooterSection";
 import LaptopNavbar from "../Components/LaptopNavbar";
 import MobileNavbar from "../Components/MobileNavbar";
+import GetStartedSection from "../Sections/GetStartedSection";
+import VoiceBoxesSection from "../Sections/VoiceBoxesSection.jsx";
+import IntegrationSection from "../Sections/IntegrationSection.jsx";
 
 
 function HomePage() {
@@ -16,7 +19,11 @@ function HomePage() {
             </div>
             <HeroSection />
             <AboutSection />
+            <VoiceBoxesSection />
+            <IntegrationSection />
+            <GetStartedSection />  
             <FooterSection />
+
         </>
     );
 }

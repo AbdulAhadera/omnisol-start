@@ -1,5 +1,6 @@
-import { motion } from "motion/react";
 import React from "react";
+import { motion } from "motion/react";
+import { useNavigate } from "react-router-dom";
 import AuroraBackground from "../Components/AuroraBackground";
 import { Cover } from "../Components/Cover";
 import { BsStars } from "react-icons/bs";
@@ -8,6 +9,15 @@ import { CiChat1 } from "react-icons/ci";
 import { RiRobot2Line } from "react-icons/ri";
 
 function HeroSection() {
+
+
+    const navigate = useNavigate();
+
+    const handleRedirect = () => {
+        navigate('/v1/agent/liveAgent');
+    };
+
+
     return (
         <AuroraBackground>
             <motion.div
@@ -37,6 +47,8 @@ function HeroSection() {
                     Through our advanced AI technology, we empower businesses and hospitals with revolutionary voice agents designed to enhance customer service, streamline appointment bookings, and reduce operational costs.
                 </div>
                 <button
+                    key={0}
+                    onClick={handleRedirect}
                     className="bg-gradient-to-l from-[#007bff] to-[#00BFFF] rounded-full w-fit text-white dark:text-black px-4 py-2">
                     Try For Free
                 </button>
@@ -45,7 +57,7 @@ function HeroSection() {
                 <div className="flex pt-12">
 
                     <div className="flex mx-4">
-                        <IoCallOutline  style={{ color:"#FDE047", marginTop: "5px" }} />
+                        <IoCallOutline style={{ color: "#FDE047", marginTop: "5px" }} />
                         <p className="pl-2 text-color">Smart Answering</p>
                     </div>
 
